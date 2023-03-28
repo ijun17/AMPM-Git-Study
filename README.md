@@ -1,10 +1,10 @@
 # 스터디 목차
 
-1. 스터디 소개 / 깃이 무엇인지(깃과 깃허브 차이)
-2. 깃 설치 및 깃허브와 연동
-3. 깃허브에 변경사항 올리기(commit, push), 받아오기(pull)
-4. branch 및 merge
-5. 유용한 기능들(markdown, github-page, .gitignore)
+1. \[1주차]스터디 소개 / 깃이 무엇인지(깃과 깃허브 차이)
+2. \[2주차]깃 설치 및 깃허브와 연동
+3. \[3주차]깃허브에 변경사항 올리기(commit, push), 받아오기(pull)
+4. \[4주차]branch 및 merge
+5. \[5주차]유용한 기능들(markdown, github-page, .gitignore)
 
 # 1주차
 
