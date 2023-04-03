@@ -9,10 +9,11 @@
 1. github-page이란
 1. .gitignore이란
 
-# 1주차 - 깃,깃허브란
+# 1주차 - 깃과 깃허브란
 
 [Git과 Github의 차이]
 > Git - 컴퓨터 **파일**의 변경사항을 추적하고 여러 명의 사용자들 간에 해당 파일들의 작업을 조율하기 위한 **분산 버전 관리 시스템**이다. 소프트웨어 개발에서 소스 코드 관리에 주로 사용된다. 
+
 > Github - 깃허브는 깃 저장소 호스팅을 지원하는 **웹 서비스**이다.
 
 [Github를 사용하는 이유]
@@ -31,16 +32,14 @@
 
 [깃에 깃허브 아이디 비밀번호 등록]
 
-로컬 컴퓨터에 설치된 깃의 변경사항을 깃허브에 올리기 위해선 먼저 깃에 깃허브 아이디와 비밀번호를 등록해야 합니다. cmd를 켜서 다음을 입력해주세요
+로컬 컴퓨터에 설치된 깃의 변경사항을 원격 저장소인 깃허브에 올리기 위해선 먼저 깃에 깃허브 아이디와 비밀번호를 등록해야 합니다. cmd를 켜서 다음을 입력해주세요
 
-1. `git config --global user.name "이름"` : 깃허브 이름 등록
-1. `git config --global user.email "이메일"` : 깃허브 이메일 등록
-1. `git config --global user.password "비밀번호"` : 비밀번호 등록
-1. `git config --list` : 이름,이메일,비밀번호 잘입력되었는지 확인
+*cmd 키는법 : 찾기에 `cmd` 입력 및 엔터
 
-[로컬 저장소에 원격 저장소 링크 등록]
-
-`git remote add origin 원격저장소주소`
+1. cmd > `git config --global user.name "이름"` : 깃허브 이름 등록
+1. cmd > `git config --global user.email "이메일"` : 깃허브 이메일 등록
+1. cmd > `git config --global user.password "비밀번호"` : 비밀번호 등록
+1. cmd > `git config --list` : 이름,이메일,비밀번호 잘입력되었는지 확인
 
 ---
 
@@ -48,4 +47,16 @@
 
 앞서 말했듯 깃은 단순히 말해 "파일 버전 관리 시스템" 입니다. 아무 파일이든 상관 없으니 다음 과정을 따라해보세요.
 
-1. 원격 저장소(Remote Repository) 만들기 : 깃허브 사이트에서 '+' 버튼을 눌러
+[원격저장소(Remote Repository) 및 로컬저장소(Local Repository) 만들기]
+
+*폴더 경로의 cmd 키는법 : 파일 탐색기 주소에 `cmd` 입력 및 엔터
+
+1. 원격저장소 만들기 : 깃허브 사이트 우측 상단 '+' 버튼을 눌러 'New Repository'를 클릭
+1. 로컬저장소 만들기 : 폴더를 만들고 그 안에 cmd > `git init` 입력
+1. 로컬과 원격 연결 : cmd > `git remote add origin 원격저장소주소`
+
+[변경 사항 저장]
+
+1. cmd > `git add .` : 변경사항을 커밋(변경사항)에 추가
+1. cmd > `git commit -m "커밋메시지"` : 로컬저장소에 커밋(변경사항)을 추가
+1. cmd > `git push origin main` : 원격저장소에 커밋(변경사항)을 추가
