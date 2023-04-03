@@ -40,7 +40,9 @@
 
 로컬 컴퓨터에 설치된 깃의 변경사항을 원격 저장소인 깃허브에 올리기 위해선 먼저 깃에 깃허브 아이디와 비밀번호를 등록해야 합니다. cmd를 켜서 다음을 입력해주세요
 
-1. cmd 키기 : 찾기에 `cmd` 입력 및 엔터
+*cmd 키기(윈도우) : 좌측 하단 찾기에 'cmd' 입력 및 엔터
+*터미널 키기(맥) : 메뉴바에서 돋보기 모양의 아이콘 클릭 후 '터미널' 또는 'terminal' 입력
+
 1. cmd > `git config --global user.name "이름"` : 깃허브 이름 등록
 1. cmd > `git config --global user.email "이메일"` : 깃허브 이메일 등록
 1. cmd > `git config --global user.password "비밀번호"` : 비밀번호 등록
@@ -56,17 +58,17 @@
 
 ### 3.2 [원격저장소(Remote Repository) 및 로컬저장소(Local Repository) 만들기]
 
-*폴더 경로의 cmd 키는법 : 파일 탐색기 주소에 'cmd' 입력 및 엔터
+*cmd 및 터미널에서 로컬 저장소(프로젝트 폴더)로 이동 : cmd > `cd 폴더경로`
 
 1. 원격저장소 만들기 : 깃허브 사이트 우측 상단 '+' 버튼을 눌러 'New Repository'를 클릭
-1. 로컬저장소 만들기 : 폴더를 만들고 그 안에 cmd(프로젝트 폴더) > `git init`
-1. 로컬과 원격 연결 : cmd(프로젝트 폴더) > `git remote add origin 원격저장소주소`
+1. 로컬저장소 만들기 : 폴더를 만들고 그 안에 cmd(로컬 저장소) > `git init`
+1. 로컬과 원격 연결 : cmd(로컬 저장소) > `git remote add origin 원격저장소주소`
 
 ### 3.3 [변경 사항 올리기]
 
-1. cmd > `git add .` : 변경사항을 커밋(변경사항)에 추가
-1. cmd > `git commit -m "커밋메시지"` : 로컬저장소에 커밋(변경사항)을 추가
-1. cmd > `git push origin main` : 원격저장소에 커밋(변경사항)을 추가
+1. cmd(로컬 저장소) > `git add .` : 변경사항을 커밋(변경사항)에 추가
+1. cmd(로컬 저장소) > `git commit -m "커밋메시지"` : 로컬저장소에 커밋(변경사항)을 추가
+1. cmd(로컬 저장소) > `git push origin main` : 원격저장소에 커밋(변경사항)을 추가
 
 ---
 
