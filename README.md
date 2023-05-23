@@ -73,8 +73,38 @@ cmd 또는 터미널을 켜서 다음을 입력(쌍따옴표도 입력해야함)
 <details>
 <summary><h1>4주차 - 깃허브에서 변경사항 받아오기</h1></summary>
 
-만약 원격저장소에 변경이 생긴다면 그 변경사항을 로컬저장소에도 기록해야함
+원격저장소에 변경이 생길 경우
 
-cmd(로컬저장소) > `git pull origin main`
+### 4.1 변경사항 확인
+
+1. cmd(로컬저장소) > `git fetch origin`
+
+### 4.2 변경사항 가져오기
+
+1. cmd(로컬저장소) > `git pull origin master`
+
+</details>
+
+<details>
+<summary><h1>5주차 - branch, merge</h1></summary>
+
+여러 명이 동시에 개발을 진행할 때, 각자 복사본을 생성하여 작업을 진행하고, 작업이 완료되면 원본과 병합한다.
+
+여기서 복사본을 `branch`라고 한다.
+
+### 4.1 branch
+
+1. 브랜치 생성 : cmd(로컬저장소) > `git branch [새로운 브랜치명]`
+2. 브랜치 전환 : cmd(로컬저장소) > `git switch [전환할 브랜치명]`
+3. 브랜치에서 작업(add, commit)
+
+* 브랜치 목록 확인 : `git branch`
+
+### 4.2 merge
+
+1. 기존 브랜치로 전환 : `git switch master`
+2. 브랜치 병합 : `git merge [병합할 브랜치]`
+
+* 브랜치 삭제(안해도됨) : `git branch -d [삭제할 브랜치명]`
 
 </details>
