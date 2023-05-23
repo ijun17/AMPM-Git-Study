@@ -54,17 +54,17 @@ cmd 또는 터미널을 켜서 다음을 입력(쌍따옴표도 입력해야함)
 <details>
 <summary><h1>3주차 - 변경사항 기록</h1></summary>
 
-### 3.1 원격저장소 등록
+### 3.1 로컬저장소-원격저장소 연결 
 
 1. 원격저장소 만들기 : 깃허브 사이트 우측 상단 '+' 버튼을 눌러 'New Repository'를 클릭
 1. 로컬저장소 만들기 : 작업 공간 안에 cmd(로컬저장소) > `git init`
-1. 로컬과 원격 연결 : cmd(로컬저장소) > `git remote add origin 원격저장소주소`
+1. 로컬에 원격저장소 등록 : cmd(로컬저장소) > `git remote add origin 원격저장소주소`
 
 ### 3.2 변경 사항 올리기
 
 1. cmd(로컬저장소) > `git add .` : Staging Area에 변경사항을 추가
 1. cmd(로컬저장소) > `git commit -m "커밋메시지"` : Staging Area에 있는 변경사항을 로컬저장소에 기록
-1. cmd(로컬저장소) > `git push origin main` : 원격저장소에 변경사항을 기록
+1. cmd(로컬저장소) > `git push origin master` : 원격저장소에 변경사항을 기록
 
 ---
 
@@ -73,7 +73,8 @@ cmd 또는 터미널을 켜서 다음을 입력(쌍따옴표도 입력해야함)
 <details>
 <summary><h1>4주차 - 깃허브에서 변경사항 받아오기</h1></summary>
 
-1. 만약 원격 저장소에서 변경이 생긴다면
-2. 
+만약 원격저장소에 변경이 생긴다면 그 변경사항을 로컬저장소에도 기록해야함
+
+cmd(로컬저장소) > `git pull origin main`
 
 </details>
