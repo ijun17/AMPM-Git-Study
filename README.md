@@ -11,7 +11,7 @@
 
 ---
 <details>
-<summary>접기/펼치기</summary>
+<summary><h1>1주차 - 깃과 깃허브란</h1></summary>
 
 # 1주차 - 깃과 깃허브란
 
