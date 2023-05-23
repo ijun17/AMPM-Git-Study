@@ -77,13 +77,12 @@ cmd 또는 터미널을 켜서 다음을 입력(쌍따옴표도 입력해야함)
 
 원격저장소에 변경이 생길 경우
 
-### 4.1 변경사항 확인
+**fetch** : 변경사항 로컬저장소에 반영
+* cmd(로컬저장소) > `git fetch origin`
+* 작업 공간을 수정하려면 cmd(로컬저장소) > `git merge origin/main`
 
-1. cmd(로컬저장소) > `git fetch origin`
-
-### 4.2 변경사항 가져오기
-
-1. cmd(로컬저장소) > `git pull origin master`
+**pull** : fetch + merge
+* cmd(로컬저장소) > `git pull origin master`
 
 </details>
 
