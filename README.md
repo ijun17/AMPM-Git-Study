@@ -1,13 +1,12 @@
-# 스터디 목차
+# 목차
 
-1. 깃 & 깃허브
+1. 깃과 깃허브란
 1. 깃에 깃허브 인증정보 등록
-1. 변경사항 기록(add, commit, push)
-1. 깃허브에서 변경사항 받아오기(pull)
-1. branch & merge
-1. 마크다운이란
-1. github-page이란
-1. .gitignore이란
+1. 변경사항 기록
+1. 깃허브에서 변경사항 받아오기
+1. branch, merge
+1. git flow
+1. github 유용한 기능  
 
 ---
 <details>
@@ -93,7 +92,7 @@ cmd 또는 터미널을 켜서 다음을 입력(쌍따옴표도 입력해야함)
 
 여기서 복사본을 `branch`라고 한다.
 
-### 4.1 branch
+### 5.1 branch
 
 1. 브랜치 생성 : cmd(로컬저장소) > `git branch [새로운 브랜치명]`
 2. 브랜치 전환 : cmd(로컬저장소) > `git switch [전환할 브랜치명]`
@@ -101,18 +100,63 @@ cmd 또는 터미널을 켜서 다음을 입력(쌍따옴표도 입력해야함)
 
 * 브랜치 목록 확인 : `git branch`
 
-### 4.2 merge
+### 5.2 merge
 
 1. 기존 브랜치로 전환 : `git switch master`
 2. 브랜치 병합 : `git merge [병합할 브랜치]`
 
 * 브랜치 삭제 : `git branch -d [삭제할 브랜치명]`
 
-### 4.3 merge 이후
+### 5.3 merge 이후
 
 * merge 이후에도 브랜치는 사라지지 않음
 * 기록용으로 남겨 놓기도 함
 * 삭제하지 않으면 동명의 브랜치를 못 만듦
 * 오래된 브랜치는 정리하는게 좋음
+
+---
+
+</details>
+
+
+<details>
+<summary><h1>6주차 - git flow</h1></summary>
+
+> 협업을 위한 git branch 전략
+
+### git flow에서 사용되는 브랜치(예시)
+* Main (또는 Master): 제품의 실제 릴리스를 관리하는 메인 브랜치. 안정적이고 배포 가능한 상태의 코드만을 포함.
+* Develop: 개발 중인 코드를 관리하는 브랜치. 새로운 기능 개발이나 버그 수정과 같은 작업을 수행하는 개발자들이 여기에서 작업을 진행.
+* Feature: 새로운 기능을 개발하기 위해 사용되는 브랜치. 각각의 기능은 개별적인 브랜치로 생성되며, 개발이 완료되면 Develop 브랜치로 병합.
+* Release: 제품의 배포를 준비하는 브랜치. 개발이 완료되고 테스트가 완료된 코드를 이 브랜치에 병합하여 배포를 준비.
+* Hotfix: 긴급하게 수정이 필요한 버그를 처리하기 위한 브랜치. Main 브랜치에서 발생한 버그를 수정한 후, Develop 브랜치와 Main 브랜치로 병합하여 배포.
+
+### 배민 git flow
+[git flow 배민](https://techblog.woowahan.com/2553/)
+
+---
+
+</details>
+
+
+
+<details>
+<summary><h1>7주차 - github 유용한 기능</h1></summary>
+
+### 7.1 markdown
+
+* 마크다운(.md 또는 .markdown)이란 마크업 언어
+* 깃허브에서 프로젝트를 설명하는데 사용
+
+### 7.2 github page
+
+* github에서 웹 사이트를 호스팅해주는 서비스
+* 블로그를 올릴 수 있음(jekyll 지원)
+
+### 7.3 .gitignore
+
+* 무시할 파일을 지정하는 파일
+
+---
 
 </details>
