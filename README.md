@@ -123,13 +123,18 @@ cmd 또는 터미널을 켜서 다음을 입력(쌍따옴표도 입력해야함)
 <summary><h1>6주차 - git flow</h1></summary>
 
 > 협업을 위한 git branch 전략
+[https://drive.google.com/uc?export=view&id=1dBD4F8sNrgrfk7wOnAckN9W5Qud_SlHS]()
 
 ### git flow에서 사용되는 브랜치(예시)
 * Main (또는 Master): 제품의 실제 릴리스를 관리하는 메인 브랜치. 안정적이고 배포 가능한 상태의 코드만을 포함.
 * Develop: 개발 중인 코드를 관리하는 브랜치. 새로운 기능 개발이나 버그 수정과 같은 작업을 수행하는 개발자들이 여기에서 작업을 진행.
-* Feature: 새로운 기능을 개발하기 위해 사용되는 브랜치. 각각의 기능은 개별적인 브랜치로 생성되며, 개발이 완료되면 Develop 브랜치로 병합.
-* Release: 제품의 배포를 준비하는 브랜치. 개발이 완료되고 테스트가 완료된 코드를 이 브랜치에 병합하여 배포를 준비.
+* Feature: 새로운 기능을 개발하기 위해 사용되는 브랜치. 각각의 기능은 개별적인 브랜치로 생성되며, 개발이 완료되면 Develop 브랜치로 병합. 
+* Release: 제품의 배포를 준비하는 브랜치. 개발이 완료되고 테스트가 완료된 코드를 이 브랜치에 병합하여 배포를 준비. 
 * Hotfix: 긴급하게 수정이 필요한 버그를 처리하기 위한 브랜치. Main 브랜치에서 발생한 버그를 수정한 후, Develop 브랜치와 Main 브랜치로 병합하여 배포.
+
+### fork와 pull request
+* fork : 다른 사람의 원격저장소를 나의 원격저장소로 복사
+* pull request : 내 저장소의 변경사항을 가져가라고 원본 저장소에 요청하는 것
 
 ### 배민 git flow
 [git flow 배민](https://techblog.woowahan.com/2553/)
