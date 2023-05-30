@@ -124,7 +124,7 @@ cmd 또는 터미널을 켜서 다음을 입력(쌍따옴표도 입력해야함)
 
 > 협업을 위한 git branch 전략
 
-[https://drive.google.com/uc?export=view&id=1dBD4F8sNrgrfk7wOnAckN9W5Qud_SlHS]()
+![그림](https://drive.google.com/uc?export=view&id=1dBD4F8sNrgrfk7wOnAckN9W5Qud_SlHS)
 
 ### git flow에서 사용되는 브랜치(예시)
 * Main (또는 Master): 제품의 실제 릴리스를 관리하는 메인 브랜치. 안정적이고 배포 가능한 상태의 코드만을 포함.
