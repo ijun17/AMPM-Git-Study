@@ -123,6 +123,7 @@ cmd 또는 터미널을 켜서 다음을 입력(쌍따옴표도 입력해야함)
 <summary><h1>6주차 - git flow</h1></summary>
 
 > 협업을 위한 git branch 전략
+
 [https://drive.google.com/uc?export=view&id=1dBD4F8sNrgrfk7wOnAckN9W5Qud_SlHS]()
 
 ### git flow에서 사용되는 브랜치(예시)
